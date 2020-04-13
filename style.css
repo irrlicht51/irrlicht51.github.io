@@ -171,7 +171,7 @@ header {
 /* fv */
 
   .fv {
-    background-image: url(fv-bgi@2x.jpg);
+    background-image: url(./fv-bgi@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
