@@ -5,9 +5,9 @@ $(function() {
     $('body').toggleClass('noscroll');
   });
 
-  if ($(window).width() < 768 ) {
-    $('.header-navi ul li>a').click(function() {
-      $('.header-navi').fadeToggle(300);
+  if( $(window).width() < 768 ){
+    $('.nav-item>a').on('click',function(){
+      $('.header-navi').fadeOut(300);
       $('.burger-btn').removeClass('close');
       $('body').removeClass('noscroll');
     });
