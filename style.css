@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+/* reset.css */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* style.css */
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6em;
+  line-height: 1.7;
+  letter-spacing: .05em;
+  box-sizing: border-box;
+  color: #141414;
+  font-family: 'Roboto', sans-serif, 'Noto Sans JP', sans-serif;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h2 {
+  font-size: 3.4rem;
+  text-align: center;
+  padding-bottom: 70px;
+}
+h3 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+  line-height: 2;
+}
+section {
+  padding: 100px 10% 50px;
+}
+.noscroll {
+  overflow: hidden;
+}
+
+/* header部分 */
+
+header {
+  padding: 0 120px;
+  height: 75px;
+  background-color: #141414;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+.header-navi ul {
+  display: flex;
+}
+.header-navi li {
+  margin-right: 55px;
+}
+.header-navi li:last-child {
+  margin-right: 0;
+}
+.burger-btn {
+  display: none;
+}
+
+/* main部分 */
+
+/* fv */
+
+  .fv {
+    background-image: url(../img/fv-bgi@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    color: #fff;
+    font-size: 5rem;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 35px 42px;
+  }
+
+  /* service */
+
+  .service-text, .service-image {
+    max-width: 480px;
+  }
+  .service-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .second {
+    flex-direction: row-reverse;
+    margin-top: 50px;
+  }
+
+  /* news */
+
+  .news-content ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .news-content li {
+    max-width: 320px;
+    box-shadow: 0 0 6px #141414;
+    margin-right: 20px;
+  }
+  .news-content li:last-child {
+    margin-right: 0;
+  }
+  .news-content li p {
+    display: inline-block;
+    color: #141414;
+    padding: 25px 35px;
+  }
+
+  /* contact */
+  form {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .form-content {
+    margin-bottom: 20px;
+  }
+  input, textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #141414;
+    line-height: 2;
+    padding: 5px;
+  }
+  textarea {
+    height: 170px;
+  }
+  label {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+  }
+  .form-submit {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .submit-btn {
+    display: inline-block;
+    width: 245px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 20px 45px;
+    background-color: #141414;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 6px #141414;
+    color: #fff;
+  }
+
+  /* footer */
+  footer {
+    height: 70px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #141414;
+    color: #fff;
+    font-size: small;
+  }
+
+  /* トップへ戻るボタン */
+
+  #page-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+  }
+  #page-top a {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    background-color: #999;
+    border-radius: 3px;
+    transition: all .3s;
+  }
+  #page-top a:hover {
+    background-color: #666;
+  }
+
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 3rem;
+    padding-bottom: 50px;
+  }
+  h3 {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    padding-bottom: 30px;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  section {
+    padding: 100px 5% 50px;
+  }
+  header {
+    padding: 0 4vw;
+  }
+  .header-navi {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.8);
+  }
+  .header-navi ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-navi li {
+    margin: 0 0 40px;
+  }
+  .header-navi li:last-child {
+    margin-bottom: 0;
+  }
+  .burger-btn {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 4vw;
+    transition: all .3s;
+    cursor: pointer;
+  }
+  .burger-btn span {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: all .3s;
+  }
+  .burger-btn span:nth-of-type(1), .burger-btn span:nth-of-type(2) {
+    margin-bottom: 8px;
+  }
+  .burger-btn.close span:nth-of-type(1) {
+    transform: rotate(45deg)translate(8px,8px);
+  }
+  .burger-btn.close span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .burger-btn.close span:nth-of-type(3) {
+    transform: rotate(-45deg)translate(8px,-8px);
+  }
+  h1 {
+    font-size: 3rem;
+    padding: 25px 32px;
+  }
+
+  /* service */
+
+  .service-image {
+    margin-top: 30px;
+  }
+  .service-content {
+    justify-content: center;
+  }
+
+
+  /* news */
+
+  .news-content ul {
+    flex-direction: column;
+  }
+  .news-content li {
+    margin: 0 auto 30px;
+  }
+  .news-content li:last-child {
+    margin: 0 auto 30px;
+  }
+  .news-content li img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* トップへ戻るボタン */
+
+  #page-top {
+    right: 4vw;
+    bottom: 4vw;
+  }
+  #page-top a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 3.5rem;
+  }
+
+}
+
+
